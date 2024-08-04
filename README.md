@@ -28,6 +28,49 @@ DB_PASSWORD='your_mysql_password'
 
 ## Usage
 
+1. Start the server by running `npm start`.
+2. Use a tool like Insomnia or Postman to test the API routes.
+
+## API Routes
+
+### Categories
+- GET all categories: `/api/categories`
+- GET a single category: `/api/categories/:id`
+- POST a new category: `/api/categories`
+- PUT update a category: `/api/categories/:id`
+- DELETE a category: `/api/categories/:id`
+
+### Products
+- GET all products: `/api/products`
+- GET a single product: `/api/products/:id`
+- POST a new product: `/api/products`
+- PUT update a product: `/api/products/:id`
+- DELETE a product: `/api/products/:id`
+
+### Tags
+- GET all tags: `/api/tags`
+- GET a single tag: `/api/tags/:id`
+- POST a new tag: `/api/tags`
+- PUT update a tag: `/api/tags/:id`
+- DELETE a tag: `/api/tags/:id`
+
+## Database Models
+
+- Category
+- Product
+- Tag
+- ProductTag
+
+## Technologies Used
+
+- Node.js
+- Express.js
+- MySQL
+- Sequelize ORM
+- dotenv
+
+## Usage
+
 1. Ensure your MySQL server is running.
 2. If you haven't already, create and seed the database:
 mysql -u your_username -p < db/schema.sql
@@ -48,3 +91,7 @@ npm run seed
 This will drop the existing database if it exists, recreate it, and then seed it with test data.
 
 Note: Replace `your_username` with your actual MySQL username.
+
+## Contributing
+
+This is a project I was tasked with during my coding bootcamp training, please do not contribute.  Thank you.
